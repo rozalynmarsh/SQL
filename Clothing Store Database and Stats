@@ -1,0 +1,26 @@
+Design a store database 
+
+CREATE TABLE Fashionista (id integer primary key, name text, quantity integer, price integer, color text);
+
+INSERT INTO Fashionista VALUES (1, "shirts", 7, 24.00, "yellow");
+INSERT INTO Fashionista VALUES (2, "jeans", 10, 170.00, "blue");
+INSERT INTO Fashionista VALUES (3, "shoes", 8, 250.00, "black");
+INSERT INTO Fashionista VALUES (4, "scarf", 4, 18.00, "red");
+INSERT INTO Fashionista VALUES (5, "necklaces", 12, 32.00, "gold");
+INSERT INTO Fashionista VALUES (6, "earrings", 12, 22.00, "silver");
+INSERT INTO Fashionista VALUES (7, "bracelets", 16, 40.00, "pink");
+INSERT INTO Fashionista VALUES (8, "bralettes", 6, 38.00, "pink");
+INSERT INTO Fashionista VALUES (9, "rings", 20, 50.00, "gold");
+INSERT INTO Fashionista VALUES (10, "hats", 2, 30.00, "green");
+INSERT INTO Fashionista VALUES (11, "belts", 19, 190.00, "orange");
+INSERT INTO Fashionista VALUES (12, "lotion", 3, 12.00, "violet");
+INSERT INTO Fashionista VALUES (13, "body_spray", 4, 29.00, "blue");
+INSERT INTO Fashionista VALUES (14, "body_scrubs", 1, 7.00, "yellow");
+INSERT INTO Fashionista VALUES (15, "eyeglasses", 2, 5.00, "gold");
+
+---Display database ordered by price
+SELECT * FROM Fashionista;
+SELECT * FROM Fashionista ORDER BY "price" desc;
+
+---What's the most expensive item in the store?
+SELECT MAX(price) AS Most_Expensive_Item FROM Fashionista;
